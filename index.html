@@ -1,195 +1,89 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
 <head>
-
-<style>
-
-
-
-.Email{
-
-font-family: Arial;
-font-size: 12px;
-margin: 0px;
-color: grey;
+  <meta charset="UTF-8">
+  <title>Simple Car Website</title>
 
 
 
-}
-.Typebox{
-margin-top: 4px;
-margin-bottom: 12px;
-width: 400px;
+    
+</head>
 
 
 
+  <header>
+    <h1>Welcome to Our Car Website</h1>  
+  </header>
+  <nav>
+    <ul>
+      
 
-}
-.Policy{
-
-font-family: Arial;
-font-size: 12px;
-margin: 0px;
-color: grey;
-
-}
-
-.Join{
-
-background-color:rgb(47, 47, 234) ;
-color: white;
-font-family: Arial;
-font-size: 17px;
-text-align: center;
-border-radius: 19px;
-padding: 12px;
-width: 400px;
-display:block;
-
-
-}
-
-.Add-cart {
-background-color: yellow;
-border-radius: 2px;
-border: none;
-
-
-}
-.Subscribe-button {
-  background-color: rgb(204, 0, 0);
-  color: white;
-  border: none;
-  height: 36px;
-  width: 105;
-  border-radius: 2px;
-  cursor: pointer; 
-  margin-right: 10px;
-  transition: opacity 0.15s;
-  margin-bottom: 15px;
-}
-.Subscribe-button:hover {
-opacity: 0.8;
+      <li><a href="https://app.edublocks.org/project/iUfywRWowQWuQqZzIaOzrLI7Ddl1/iHUQvYJ9QYhgtOqUsljh" class="Cars-afzal">Cars</a></li>
+      <li><a href="#" class="About-usafzal">About Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="car-list">
+      <article>
+        <h2>Car Model 1</h2>
+        <a href ="https://www.topgear.com/car-reviews/mercedes-benz/s-class" target="_blank"><img src="https://www.topgear.com/sites/default/files/2022/03/1-Mercedes-S-Class-plug-in.jpg?w=892&h=502" alt="Car Model 1"></a>
+        <p>Mercedes Benz.</p>
+        <button  class="BUTTON1"><a style="text-decoration:none" href="https://www.topgear.com/car-reviews/mercedes-benz/s-class"target="_blank">Learn More</a></button>
+      </article> 
+        
+      <article>
+        <h2>Car Model 2</h2>
+        <a href="https://www.carwow.co.uk/bmw/i7#gref"target="_blank"><img src="https://images.prismic.io/carwow/14aed425-0e11-4553-b45e-63bc3f3b6802_2022+BMW+i7+Front+3%3A4+Driving.jpg?auto=format&cs=tinysrgb&fit=crop&q=60&w=750"></a>
+<p>BMW</p>
+<button class="BUTTON2"><a style="text-decoration:none" href="https://www.carwow.co.uk/bmw/i7#gref"target="_blank">Learn More</a></button>
+      </article>
+      <article>
+        <h2>Car Model 3</h2>
+        <a href="https://uk.motor1.com/photos/866791/the-point-by-point-novelties-of-the-toyota-yaris-2024/#7500544_the-point-by-point-news-of-the-toyota-yaris-2024" target="_blank"><img src="https://cdn.motor1.com/images/mgl/9mNgP1/s1/le-novita-punto-per-punto-della-toyota-yaris-2024.jpg" alt="Car Model 3"></a>
+        <p>Toyota</p>
+        <button class="BUTOON3"><a style="text-decoration:none" href="https://uk.motor1.com/photos/866791/the-point-by-point-novelties-of-the-toyota-yaris-2024/#7500544_the-point-by-point-news-of-the-toyota-yaris-2024"target=_blank >Learn More</a></button>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Afzals Car Website. All rights reserved.</p>
+  </footer>
+<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+<script>
 
 
-}
-.Subscribe-button:active{
+let mybutton = document.getElementById("myBtn");
 
-  background-color: blue;
-  opacity: 0.4;
-}
-.join-button:hover{
 
-  background-color: rgb(41, 118, 211);
-  color: white;
-}
-.join-button:active{
-  opacity: 0.7;
-}
+window.onscroll = function() {scrollFunction()};
 
-.join-button {
-  background-color: white;
-  border-color: rgb(41, 118, 211);
-  border-style: solid;
-  border-width: 1px;
-  color: blue;
-  height: 36px;
-  width: 62px;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: background-color 1s,color 1s;
-}
-.tweet-button:hover{
-  box-shadow:10px 5px 10px rgb(0,0,0,0.15);
-transition: box-shadow 0.15s;
-}
-
-.tweet-button{
-  background-color: blue;
-  color: white;
-  border: none;
-  height: 36px;
-  width: 70px;
-  border-radius: 18px;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
-  margin-left: 10px;
-  transition: box-shadow 0.15s;
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
 
 
-
-.Search{
-
-
-display: block;
-margin-bottom: 16px;
-margin-top: 16px;
-
-
-
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
 }
-
-
-.Name{
-
-display: block;
-margin-bottom: 8px;
-
-
-}
-.Email{
-display: block;
-margin-bottom: 8px;
-
-width: 139px;
-font-size: 13.3333px;
-
-
-
-}
-
-
-.Thanks{
-
-display: inline-block;
-vertical-align: middle;
-}
-
-.No{
-
-display: inline-block;
-margin-right: 400px
-;
-
-
-
-
-}
-
-
-
-.Firstname{
-display: inline-block;
-
-
-
-
-}
+    
+</script>
+</body>
+</html>
 
 
 
 
 
-.Emails{
-
-display: block;
-width: 250px;
 
 
 
-}
+
+
 
 
 .BUTTON1{
@@ -473,119 +367,12 @@ body {
 </style>
 
 
-<button class="Subscribe-button">
-  Subscribe
-</button>
-
-
-<button class="join-button">
-  JOIN
-</button>
-
-<button class="tweet-button">
-  Tweet
-</button>
-
-</head>
 
 
 
-<body>
-<p class="Email">Email</p>
-<input type="textbox"class="Typebox">
-<p class="Policy">By clicking Agree & Join, you agree to the Privacy Policy.</p>
-<p class="Join">Agree & Join</p>
-
-
-<button class="Add-cart">Add to Cart</button>
-
-
-<input type="textbox" placeholder="Search" class="Search">
-<input type="textbox" placeholder="Name" class="Name"> 
-<input type="textbox" placeholder="Email" class="Email">
-<p class="Thanks">Thanks for chatting with our<br>customer support.Would you<br>like to take our quick survey&#63;</p>
-<button class="yes">Yes</button>
-<button class="No">No</button>
-
-<input type="textbox" placeholder="First name"class="Firstname">
-<input type="textbox" placeholder="Last name" class="Lastname">
-<input type="textbox" placeholder="Email" class="Emails">
-<!Doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Simple Car Website</title>
 
 
 
-    
-</head>
-
-
-
-  <header>
-    <h1>Welcome to Our Car Website</h1>  
-  </header>
-  <nav>
-    <ul>
-      
-
-      <li><a href="https://app.edublocks.org/project/iUfywRWowQWuQqZzIaOzrLI7Ddl1/iHUQvYJ9QYhgtOqUsljh" class="Cars-afzal">Cars</a></li>
-      <li><a href="#" class="About-usafzal">About Us</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section class="car-list">
-      <article>
-        <h2>Car Model 1</h2>
-        <a href ="https://www.topgear.com/car-reviews/mercedes-benz/s-class" target="_blank"><img src="https://www.topgear.com/sites/default/files/2022/03/1-Mercedes-S-Class-plug-in.jpg?w=892&h=502" alt="Car Model 1"></a>
-        <p>Mercedes Benz.</p>
-        <button  class="BUTTON1"><a style="text-decoration:none" href="https://www.topgear.com/car-reviews/mercedes-benz/s-class"target="_blank">Learn More</a></button>
-      </article> 
-        
-      <article>
-        <h2>Car Model 2</h2>
-        <a href="https://www.carwow.co.uk/bmw/i7#gref"target="_blank"><img src="https://images.prismic.io/carwow/14aed425-0e11-4553-b45e-63bc3f3b6802_2022+BMW+i7+Front+3%3A4+Driving.jpg?auto=format&cs=tinysrgb&fit=crop&q=60&w=750"></a>
-<p>BMW</p>
-<button class="BUTTON2"><a style="text-decoration:none" href="https://www.carwow.co.uk/bmw/i7#gref"target="_blank">Learn More</a></button>
-      </article>
-      <article>
-        <h2>Car Model 3</h2>
-        <a href="https://uk.motor1.com/photos/866791/the-point-by-point-novelties-of-the-toyota-yaris-2024/#7500544_the-point-by-point-news-of-the-toyota-yaris-2024" target="_blank"><img src="https://cdn.motor1.com/images/mgl/9mNgP1/s1/le-novita-punto-per-punto-della-toyota-yaris-2024.jpg" alt="Car Model 3"></a>
-        <p>Toyota</p>
-        <button class="BUTOON3"><a style="text-decoration:none" href="https://uk.motor1.com/photos/866791/the-point-by-point-novelties-of-the-toyota-yaris-2024/#7500544_the-point-by-point-news-of-the-toyota-yaris-2024"target=_blank >Learn More</a></button>
-      </article>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Afzals Car Website. All rights reserved.</p>
-  </footer>
-<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
-<script>
-
-
-let mybutton = document.getElementById("myBtn");
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
-    
-</script>
-</body>
-</html>
 
 
 
